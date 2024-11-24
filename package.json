@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Documentation website",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "sync:notion": "node scripts/sync-notion.js",
+    "test:notion": "node scripts/test-notion.js"
+  },
+  "devDependencies": {
+    "@notionhq/client": "^2.2.15",
+    "dotenv": "^16.3.1",
+    "vitepress": "^1.0.0-rc.31"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
